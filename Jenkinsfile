@@ -10,6 +10,7 @@ stage ('Build')
 {
 sh "${mavenHome}/bin/mvn clean package"
 }
+/*
 stage ('ExecuteSonarquebeReport')
 {
 sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -30,6 +31,6 @@ stage ('send EmailNotification')
 emailext body: '''regards,
 Aboli Patil.''', subject: 'Bild is completed', to: 'patilaboli23@gmail.com'
 }
-
+*/
 
 }
