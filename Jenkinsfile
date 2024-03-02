@@ -4,7 +4,7 @@ def mavenHome = tool name : "maven3.9.6"
 
 stage ('CheckoutCode')
 {
-git credentialsId: "5c348e0c-401f-4670-a27f-ade67cbf5422", url: "https://github.com/patilaboli23/maven-web-application.git"
+git branch: 'master', git credentialsId: "5c348e0c-401f-4670-a27f-ade67cbf5422", url: "https://github.com/patilaboli23/maven-web-application.git"
 }
 stage ('Build')
 {
